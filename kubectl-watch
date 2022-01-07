@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-watch -d -- kubectl $@
+watch ${KUBECTL_WATCH_PARAMS:-'-d'} -- kubectl $@
